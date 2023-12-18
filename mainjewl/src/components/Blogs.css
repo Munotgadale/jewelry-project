@@ -1,0 +1,49 @@
+/* Additional hover effects for .hover-effect class */
+.hover-effect:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    opacity: 0.8; /* Reduce opacity on hover */
+    filter: grayscale(50%); /* Add a grayscale effect on hover */
+  }
+  
+  /* Add a box-shadow on hover */
+  .hover-effect:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Rotate on hover */
+  .hover-effect:hover {
+    transform: rotate(5deg);
+  }
+  
+  /* Add a background overlay on hover */
+  .hover-effect:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+
+  /* Hover effect for blog card images */
+.card-img-top:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  /* Additional info styles for blog card */
+  .blog-card .additional-info {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Show additional info on hover */
+  .blog-card:hover .additional-info {
+    opacity: 1;
+  }
+  
